@@ -8,3 +8,8 @@ vector:
   hosts:
     vector-01:
       ansible_connection: docker 
+
+lighthouse:
+  hosts:
+    lighthouse-01:
+       ansible_connection: docker

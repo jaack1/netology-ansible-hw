@@ -1,13 +1,8 @@
-Код тут https://github.com/jaack1/netology-ansible-hw/tree/main/02-playbook
+Playbook для установки Clickhouse Vector и Lighthouse
 
+В качестве тестового инвентаря используются контейнеры докер с ubuntu
 
-Playbook разворачивает Clickhouse и Vector внутри контейнеров Docker
-
-
-![Image alt](https://github.com/jaack1/netology-ansible-hw/blob/main/02-playbook/screenshots/02-5.png)
-
-![Image alt](https://github.com/jaack1/netology-ansible-hw/blob/main/02-playbook/screenshots/02-51.png)
-
-![Image alt](https://github.com/jaack1/netology-ansible-hw/blob/main/02-playbook/screenshots/02-6.png)
-
-![Image alt](https://github.com/jaack1/netology-ansible-hw/blob/main/02-playbook/screenshots/02-78.png)
+Используются роли:
+- [clickhouse](https://github.com/AlexeySetevoi/ansible-clickhouse)
+- [vector-role](https://github.com/jaack1/vector-role)
+- [lighthouse-role](https://github.com/jaack1/lighthouse-role)
