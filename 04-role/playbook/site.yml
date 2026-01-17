@@ -1,7 +1,7 @@
 - name: Install Clickhouse
   hosts: clickhouse
   roles:
-    - { role: clickhouse, become: false }
+    - clickhouse
 
 - name: Install Vector
   hosts: vector
