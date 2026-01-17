@@ -1,0 +1,32 @@
+- name: Install Clickhouse
+  hosts: clickhouse
+  roles:
+    - { role: clickhouse, become: false }
+
+- name: Install Vector
+  hosts: vector
+  roles:
+    - vector
+
+- name: Install Lighthouse
+  hosts: lighthouse
+  handlers:
+    - name: Start nginx service
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+  pre_tasks:
+    - name: Install nginx
+      ansible.builtin.package:
+        name:
+           - nginx
+           - git
+        state: present
+    - name: Create nginx config
+      ansible.builtin.template:
+        src: nginx.conf.j2
+        dest: /etc/nginx/sites-available/default
+        mode: "0644"
+      notify: Start nginx service
+  roles:
+    - lighthouse
