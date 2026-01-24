@@ -5,8 +5,9 @@
 
 ![Image alt](https://github.com/jaack1/netology-ansible-hw/blob/main/05-testing/screenshots/mol-1.png)
 
-2. Команда из задания "molecule init scenario --driver-name docker" не работает в моей версии molecule использовал эту инструкцию для настройки драйвера докер
- https://docs.ansible.com/projects/molecule/examples/docker/
+2. 
+
+![Image alt](https://github.com/jaack1/netology-ansible-hw/blob/main/05-testing/screenshots/mol-2.png)
 
 3. 
 
