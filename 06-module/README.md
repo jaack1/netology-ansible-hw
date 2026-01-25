@@ -1,7 +1,7 @@
 Код коллекции тут
 - [My own collection](https://github.com/jaack1/my_own_collection)
 
-- [My own collection tar.gz](https://github.com/jaack1/netology-ansible-hw/blob/main/06-module/test_collection/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz)
+- [My own collection tar.gz](https://github.com/jaack1/netology-ansible-hw/raw/refs/heads/main/06-module/test_collection/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz)
 
 
 4. 
